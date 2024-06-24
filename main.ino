@@ -507,12 +507,6 @@ void loop()
         }
       }
 
-      // Người chơi nào thắng thì lượt sau người đánh trước là người thua
-      if (whosplaying == 0)
-        whosplaying = 1;
-      else
-        whosplaying = 0;
-
       gameStatus = 0;
       delay(1000);=
     }
@@ -591,12 +585,6 @@ void loop()
           while (digitalRead(BUTTON_MOVE) == HIGH && digitalRead(BUTTON_OK) == HIGH);
         }
       }
-
-      // swap  the first move for the next match between CPU and human (one per match)
-      if (whosplaying == 0)
-        whosplaying = 1;
-      else
-        whosplaying = 0;
 
       gameStatus = 0;
       delay(1000);
