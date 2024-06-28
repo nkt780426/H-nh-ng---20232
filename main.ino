@@ -52,6 +52,7 @@ void playhuman(int value)
     {
       playhuman_showpos(humanMove, false);
       humanMove++;
+      if(humanMove > 8) humanMove = 0;
 
       // Phòng th người chơi nhấn giữ button quá lâu, khi thả nút nhần thì mới trò chơi mới tiếp tục xử lý
       while (digitalRead(BUTTON_MOVE) == LOW)
