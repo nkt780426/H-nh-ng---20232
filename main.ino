@@ -509,7 +509,7 @@ void loop()
       }
 
       gameStatus = 0;
-      delay(1000);=
+      delay(1000);
     }
   }
   else if (gameMode == 1)
